@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://africa-public.food.jumia.com/cdn/production/font-awesome/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+    <title>Jumia Foods (Copy)</title>
+</head>
+<body>
+
+    <!-- Promo header : Orange -->
+    <section id="jf">
+    <div id="header-promo-container">
+    <div class="food_header_bar_container">
+        <style type="style/css">
+            #food_header_bar{
+                background-color: #ff9900;
+                text-align: center;
+                padding: 20px 20px 15px;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            span#food_header_bar_button a{
+                padding: 5px 10px;
+                text-decoration: none;
+                color: #000000;
+                left: 20px;
+            }
+            span#header_bar_button a:hover{
+                color: #ffffff;
+
+            }
+        </style>
+        <div id="food_header_bar">
+            <span style="display:inline-block; margin-bottom: 2px; margin-top:0px; font-size: 17px;"> Need help placing an order? Call <span style="color:#ffffff"> <a style="color:#ffffff" href="tel:09036970117">09036970117</a></span> or  <span style="color:#ffffff"> <a style="color:#ffffff;" href="tel:09036970117">08160925</a></span>  📞 to order. </span>
+        </div>
+    </div>
+    </div>
+    <!-- Navbar menu: white -->
+    <nav id="jf-navbar" class="navbar is-transparent header-navbar sticky has-shadow ">
+        <div class="container">
+            <div class="navbar-brand">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <a target="_self" href="/HTML/index.html" class="navbar-item"><img src="https://africa-public.food.jumia.com/assets/production/ng/layout/themes/capricciosa_hellofood/images/en/jumiafood-logo.png?v=1658482578" alt="Logo" class="is-hidden-touch">
+
+            <img src="../Images/jumia-food-mobile.svg" alt="Logo" class="is-hidden-desktop"> </a>
+            </div>
+
+            <!--collapse navbar-collapse-->  
+
+            <div id="navbar-menu" class="navbar-menu has-text-centered-touch">
+                <div class="navbar-end mhl-mobile">
+                    <a class="navbar-item mhxs is-hidden-desktop"  href="#" target="_blank">
+                        <div class="dir-row fvh-ctr"> <img class="icon-w-16 mrs" src="../Images/prime-icon.svg" alt=""><span class="is__uppercase">Jumia Prime</span></div>
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable mhxs">
+                    <a class="navbar-item nav-lang-switch" href="#"> <div class="fvh-ctr"> <span class="is__uppercase mrs">English</span> <i class="fa fa-sm fa-chevron-down"></i></div> </a>
+                    <div class="navbar-dropdown is-hidden-touch nav-lang-switch-dropdown">
+                        <a href="#" class="navbar-item is-active">English</a>
+                        <a href="#" class="navbar-item">Pidgin</a>
+                    </div>
+
+                    <a class="navbar-item mhxs is-hidden-desktop" href="#" target="_blank">
+                        <div class="dir-col is-inline-block-touch"><span class="is__uppercase mrs">Vendors</span> </div>
+                    </a>
+                    <a class="navbar-item" href="#">
+                        <div class="fvh-ctr"> <span class="is__uppercase mrs">Help</span></div>
+                    </a>
+                        <a id="myJumiaLogin" href="#" class="btn-is-primary orange-bg button is__uppercase ">Login / Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- HOME: FIRST SECTION -->
+
+    <main class="home">
+        <section class="services-area mb-5">
+        <div class="mhn text-center phm-touch">
+            <div class="row align-items-start">
+                <div class="col-2 phn is-hidden-touch">
+                    <img src="../Images/jumiafood-homepage-left-splash-services.jpg" alt="Ads Banner" />
+                </div>
+                <div class="col-8 px-2 phm-desktop mt-crazy full-mobile column">
+                    <div class="container px-3">
+                    <h1 class="title mb-2">Everything you need, delivered now</h1>
+                    <h4 class="title is-hidden-touch"></h4>
+                    <div class="services-wrapper">
+                        <h3 class="services-wrapper-title mbm fl-wrap">
+                            <img src="../Images/icon-location-on-map-no-shadow.svg"> <span class="mlxs fsh-0" style="font-size: 1rem;color:#4a4a4a">Delivering to</span>
+                        </h3>
+                        <div class="search-city-area geolocation">
+                            <div id="geo-input-wrapper">
+                                <input placeholder="Enter your delivery address" autocomplete="off" type="text" class="input"><i class="delete" style="display:none;"></i>
+                            </div>
+                            <div id="geo-dropdown">
+                                <div class="geo-option">
+                                    <img src="../Images/icon-map.svg" alt="icon-map"><span class="pls"> Choose on map</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mtl-desktop mtm-touch service-card-list is-hidden-touch">
+                            <h3 class="services-wrapper-title mt-5 mb-3">Choose a serivce</h3>
+                            <div class="row d-flex align-items-start mb-1">
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-1.png" alt="" lazy="loaded">
+                                                <p class="card-title">Restaurant</p>
+                                                <p class="card-description">Food you love, from restaurants near you</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                    <div class="loading-placeholder">
+                                        <div class="simple-card disabled">
+                                            <img class="card-image" src="../Images/row-1b.jpeg" alt="" lazy="loaded">
+                                            <p class="card-title">Jollof Week with Coke</p>
+                                            <p class="card-description">Enjoy Jollof Rice with Coca-Cola</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-1c.png" alt="" lazy="loaded">
+                                                <p class="card-title">Fine Dining</p>
+                                                <p class="card-description">Quality dinner from the top rated restaurants nesr you</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-1d.png" alt="" lazy="loaded">
+                                                <p class="card-title">Supermarket</p>
+                                                <p class="card-description">Fresh Groceries and everyday essentials </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-start mb-1">
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-2.png" alt="" lazy="loaded">
+                                                <p class="card-title">Party</p>
+                                                <p class="card-description">Alcoholic drinks and more to get your party started</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-2b.png" alt="" lazy="loaded">
+                                                <p class="card-title">Mr Biggs</p>
+                                                <p class="card-description">Always Good</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-2c.png" alt="" lazy="loaded">
+                                                <p class="card-title">Yin Yang Express</p>
+                                                <p class="card-description">Shared Moment. Great Value</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-2d.png" alt="" lazy="loaded">
+                                                <p class="card-title"> Scoop'd Ice Cream Bar
+                                                </p>
+                                                <p class="card-description">Never Settle for One Scoop</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-start mb-3">
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-3.png" alt="" lazy="loaded">
+                                                <p class="card-title">Indomie Cafe</p>
+                                                <p class="card-description">Enjoy your Indomie, your own way</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-3b.png" alt="" lazy="loaded">
+                                                <p class="card-title">Bukka Hut</p>
+                                                <p class="card-description">Restaurant of Choice for lovers of Nigeria Dishes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-3c.png" alt="" lazy="loaded">
+                                                <p class="card-title">Tantalizers </p>
+                                                <p class="card-description">...every bite, a promise kept </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="column is-12-mobile disabled is-3-desktop">
+                                        <div class="loading-placeholder">
+                                            <div class="simple-card disabled">
+                                                <img class="card-image" src="../Images/row-3d.png" alt="" lazy="loaded">
+                                                <p class="card-title">Burger King</p>
+                                                <p class="card-description">Have it your way</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-2 phn is-hidden-touch">
+                    <img src="../Images/jumiafood-homepage-right-splash-services.jpg" alt="Ads Banner" />
+                </div>
+            </div>
+        </section>
+        <section class="how-it-works is-hidden-touch ptn">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">How it works</h1>
+                <div class="columns-2 is-centered">
+                    <div class="col-4 has-text-centered">
+                        <img src="../Images/how-it-works-1.svg">
+                        <h3 class="title is-size-3" style="margin-bottom:8px!important;">Set delivery location</h3>
+                        <p>Select the location where you want us to deliver</p>
+                    </div>
+                    <div class="col-4 has-text-centered"><img src="../Images/how-it-works-2.svg">
+                    <h3 class="title is-size-3" style="margin-bottom:8px!important;">Choose the product</h3>
+                    <p>Browse shop that deliver near you</p></div>
+                    <div class="col-4 has-text-centered"><img src="../Images/how-it-works-3.svg">
+                    <h3 class="title is-size-3" style="margin-bottom:8px!important;">Receive at your doorstep</h3>
+                    <p>Your order will be delivered to you in no time</p></div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- ANOTHER SECTION: SUBSCRIBE SECTION -->
+
+        <section class="subscribe-newsletter container-fluid .z1-1 mt-4">
+        <div class="container my-5">
+            <div class="columns is-centered has-text-centered">
+                <div class="column container is-7">
+                    <h1 class="title is-1 is-size-4-mobile has-text-white" style="margin-bottom:1rem!important;">Subscribe to our newsletter today!</h1>
+                    <div class="has-text-white is-hidden-touch">Don't miss on our great offers & Receive deals from all our top vendors via mail</div>
+                    <form action="">
+                        <div class="field is-horizontal">
+                            <div class="field-body fl-wrap mtl">
+                                <div class="field nl-city">
+                                    <div class="control">
+                                        <div class="select is-fullwidth error-validation set-icon">
+                                            <select name="" id="newsletter_subscribe_city"
+                                            name="newsletter_subscribe[city]" class="is-large mvxs" required="required">
+                                            <option value="selected">Select your city</option>
+                                            <optgroup label="Popular Cities">
+                                                <option value="">ABUJA</option>
+                                                <option value="">BAYELSA</option>
+                                                <option value="">LAGOS</option>
+                                                <option value="">PORT HARCOURT</option>
+                                            </optgroup>
+                                        <optgroup label="More Cities"> 
+                                            <option value="">ABAKALIKI</option>
+                                            <option value="">ABIA</option>
+                                            <option value="">ADO EKITI</option>
+                                            <option value="">AKURE</option>
+                                            <option value="">ANAMBRA</option>
+                                            <option value="">ASABA</option>
+                                            <option value="">BENIN</option>
+                                            <option value="">ENUGU</option>
+                                            <option value="">CALABAR</option>
+                                            <option value="">IBADAN</option>
+                                            <option value="">ILLORIN</option>
+                                            <option value="">MINNA</option>
+                                            <option value="">LEKKI</option>
+                                            <option value="">UYO</option>
+                                            <option value="">OSOGBO</option>
+                                            <option value="">OWERRI</option>
+                                            <option value="">SAPELE</option>
+                                        </optgroup></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input class="mx-2" placeholder="E-mail" type="email" required>
+                                <button class="is-uppercase news-button has-text-white"  type="button"> Subscribe newsletter</button>
+                            </div>
+                        </div>
+                        <input type="checkbox" name="Terms_and_condition" id="Terms_and_condition" required>
+                        <span class="has-text-white">I have read and accepted the <a class="has-text-white underline" href="#">Terms and conditions</a> and the <a class="has-text-white underline" href="#">Privacy policy</a> </span>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+
+        </section>
+        <section class="section get-started-corporate is-fullwidth ">
+            <div class="container d-flex my-5 has-text-centered">
+                <div class="corporate-img is-hidden-touch">
+                    <img class="img" src="../Images/jumia-for-corporate.jpg">
+                </div>
+                <div class="columms is-centered">
+                    <div class="column is-5-desktop" style=
+                    "margin: 0 auto;">
+                        <div class="content">
+                            <h1 class="title is-2 is-size-1 is-size-4-mobile has-text-weight-bold">Jumia Food for Corporate</h1>
+                            <p class="has-text-centered-mobile is-size-4">Order lunch, fuel for meetings or late-night deliveries to the office. Your favourite vendors coming to a desk near you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="apps-stores is-fullwidth orange-bg">
+            <div class="container my-4">
+                <div class="columns d-flex">
+                    <div class="column is-5-desktop has-text-centered-touch ptxs">
+                        <h1 class="title is-size-4-mobile is-size-1 has-text-white">Order Food</h1>
+                        <p class="is-hidden-touch has-text-white is-size-4">
+                            The Jumia Food app makes it simple for anybody to use a mobile device to look over the menu of the best vendors and place an order for home delivery
+                        </p>
+                        <div class="buttons-apps has-centered-touch">
+                            <a href="#" target="_blank" class="button app-icon"><img src="../Images/apple.svg" alt=""></a>
+                            <a href="#" target="_blank" class="button app-icon"><img src="../Images/android.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-stores-img is-hidden-touch">
+                <img src="../Images/jumia-food-app-mockup.png" alt="">
+            </div>
+        </section>
+
+        <div class="complex-footer section bd-typo pt-5 pbm">
+            <div class="container footer-container">
+                <div class="row is-size-5">
+                    <div class="col-3">
+                        <h6 class="title is-size-base">City</h6>
+                        <ul class="unstyled">
+                            <li>Lagos</li>
+                            <li>Abuja</li>
+                            <li>Ibadan</li>
+                            <li>Lekki Phase 1</li>
+                            <li>Victoria Island</li>
+                            <li>Yaba</li>
+                            <li>Marina</li>
+                            <li>Maitama</li>
+                            <li>Ikoyi - Dolphin Estate</li>
+                            <li>Supermarket Online</li>
+                            <li>Pharmarcy Online</li>
+                            <li>Shoppin Online</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="title is-size-base">Cuisines</h6>
+                        <ul class="unstyled">
+                            <li>Burgers in Lagos</li>
+                            <li>Pizza in Lagos</li>
+                            <li>Nigerian Food in Lagos</li>
+                            <li>African Food in Lagos</li>
+                            <li>Chinese Food in Lagos</li>
+                            <li>Indian Food in Lagos</li>
+                            <li>American Foods In Lagos</li>
+                            <li>Seafood in Lagos</li>
+                            <li>Breakfast Menu in Lagos</li>
+                            <li>Cakes in Lagos</li>
+                            <li>Sandwiches in Lagos</li>
+                            <li>Salads in Lagos</li>
+                            <li>Pasta in Lagos</li>
+                            <li>African Food in Abuja</li>
+                            <li>Sandwiches in Abuja</li>
+                            <li>Salads in Abuja</li>
+                            <li>Nigerian Food in Abuja</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="title is-size-base">Popular Vendors</h6>
+                        <ul class="unstyled">
+                            <li>Shiro</li>
+                            <li>Bamba Lounge</li>
+                            <li>Cilantra Delivery</li>
+                            <li>Bungalow Restaurant</li>
+                            <li>Chicken Capital</li>
+                            <li>Chicken Republic</li>
+                            <li>Casper & Gambini's</li>
+                            <li>Drumstix</li>
+                            <li>seven Eagle Spur</li>
+                            <li>Hard Rock Cafe</li>
+                            <li>Eric Kayser</li>
+                            <li>Kahinaar Lounge</li>
+                            <li>Krispy Kreme Doughnuts & Coffee</li>
+                            <li>Crepaway</li>
+                            <li>Debonairs Pizza</li>
+                            <li>KFC Delivery</li>
+                            <li>The Place</li>
+                            <li>Bukka Hut</li>
+                            <li>Pizza Hut</li>
+                            <li>Cold Stone Creamery</li>
+                            <li>Rhapsody's</li>
+                            <li>Spice Route</li>
+                            <li>355 Restaurant & Lounge Landmark</li>
+                            <li>China Wok</li>
+                            <li>Terra Kulture</li>
+                            <li>All Restaurant near me</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="title is-size-base">Jumia Food</h6>
+                        <ul class="unstyled">
+                            <li> <a class="terms_condition" target="_self" href="../HTML/about.html"> About </a></li>
+                            <li>Press</li>
+                            <li>Contact</li>
+                            <li>Terms and Conditions</li>
+                            <li><a class="terms_condition"  href="../HTML/policy.html" target="_self"> Privacy Policy </a></li>
+                            <li>Jumia Food Prime - Unlimited Delivery</li>
+                            <li>Become a Rider!</li>
+                            <li>Sell on Jumia</li>
+                            <li>vendors</li>
+                        </ul>
+                        <div class="mtl">
+                        <h6 class="title is-5">Contact us</h6>
+                        <ul class="d-flex is-size-4">
+                            <li><span class="icon"><i class="fa fa-twitter"></i></span></li>
+                            <li><span class="icon"><i class="fa fa-facebook"></i></span></li>
+                            <li><span class="icon"><i class="fa fa-instagram"></i></span></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="columns flex-footer">
+                <div class="column simple-footer-cms">
+                    <a class="terms_condition" href="#" target="_blank">Terms and Conditions</a>
+                    &nbsp;-&nbsp;
+                </div>
+                <span class="column simple-footer-trademark has-text-right">&COPY; Copyright 2022 Jumia Food is a registered trademark</span>
+            </div>
+        </div>
+    </main>
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
